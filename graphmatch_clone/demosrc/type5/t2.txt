@@ -1,0 +1,36 @@
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * Created by Doug Cui on 2021/10/19/20:56
+ */
+public class t2 {
+    public static void main(String[] args) {
+        System.out.println(isBalance("aaa","cc cc cc cc cc cc"));
+    }
+
+    public static boolean isBalance(String a, String b) {
+        String[] as = a.split("");
+        String[] bs = b.split(" ");
+        if (stringNum(as).equals(stringNum(bs))) {
+            return true;
+        }
+        return false;
+    }
+
+    public static String stringNum(String[] a) {
+        Map<String, Integer> map = new HashMap<>();
+        String sn = "";
+        int count = 0;
+        for (int i = 0; i < a.length; i++) {
+            if (map.containsKey(a[i])) {
+                sn = sn + map.get(a[i]);
+            } else {
+                count++;
+                sn = sn + count;
+                map.put(a[i], count);
+            }
+        }
+        return sn;
+    }
+}

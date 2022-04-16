@@ -1,0 +1,10 @@
+public class t2{
+    public int run(int u,int v){
+         int p = 0;
+         p = u;
+          if(p>0){
+            v = p+1;
+            return v;
+          }
+        }
+    }

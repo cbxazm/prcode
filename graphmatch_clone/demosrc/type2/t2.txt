@@ -1,0 +1,8 @@
+public class t2{
+    public int run(int v,int u){
+          if(v>0){
+            u = v+1;
+            return u;
+          }
+        }
+    }
