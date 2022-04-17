@@ -27,9 +27,9 @@
 ## 运行文件
 
 ```
-1./clf.py 训练基于python项目和java项目的重复Pull request检测模型
-2./gmnclf.py 训练java项目，文件重写后
-3./beforegmnclf.py 训练java项目，文件重写前
+1./clf/clf.py 训练基于python项目和java项目的重复Pull request检测模型
+2./clf/gmnclf.py 训练java项目，文件重写后
+3./clf/beforegmnclf.py 训练java项目，文件重写前
 4./rewirtecodefile.py 文件重写
 ```
 
